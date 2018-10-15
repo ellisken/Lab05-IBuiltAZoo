@@ -25,7 +25,7 @@ namespace IBuiltAZoo.Classes
         {
             get
             {
-                return 0;
+                return 1;
             }
             set
             {

@@ -19,7 +19,7 @@ namespace IBuiltAZoo.Classes
             }
             set
             {
-                Tail = value;
+                HasTail = value;
             }
         }
 
