@@ -39,6 +39,21 @@ namespace IBuiltAZoo
             Console.ReadLine();
             Console.WriteLine("Here's a demonstration of each primate type\n");
             ShowPrimates(myPrimates);
+            Console.WriteLine("\n\nHit <ENTER> to continue.");
+            Console.ReadLine();
+
+            //Show RingTailed
+            Console.WriteLine("Finally, the class RingTailed inherits from Lemur and adds a method called SpendsTime()");
+            RingTailed ringTailedLemur = new RingTailed();
+            Console.WriteLine($"Name: {ringTailedLemur.Name}");
+            Console.WriteLine($"Age: {ringTailedLemur.Age}");
+            Console.WriteLine($"Has tail? {ringTailedLemur.HasTail}");
+            Console.WriteLine($"Eats: {ringTailedLemur.Eats()}");
+            Console.WriteLine($"Sound: {ringTailedLemur.Sound()}");
+            Console.WriteLine($"Hangs: {ringTailedLemur.Hangs()}");
+            Console.WriteLine($"Spends time: {ringTailedLemur.SpendsTime()}");
+            Console.WriteLine();
+
         }
 
         /// <summary>
@@ -174,6 +189,18 @@ namespace IBuiltAZoo
         {
             Proboscis p = new Proboscis();
             return p.Eats();
+        }
+
+        public static string RTSpendsTime()
+        {
+            RingTailed rt = new RingTailed();
+            return rt.SpendsTime();
+        }
+
+        public static string RTName()
+        {
+            RingTailed rt = new RingTailed();
+            return rt.Name;
         }
     }
 }

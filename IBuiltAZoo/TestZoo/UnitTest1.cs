@@ -41,7 +41,7 @@ namespace TestZoo
         {
             Assert.True(Program.DoesPolarHunt());
         }
-        
+
         //Test PolarBear.ClawLength is same as Bear.ClawLength
         [Fact]
         public void PolarClawLengthIs3()
@@ -91,7 +91,18 @@ namespace TestZoo
             Assert.Equal("Unripe fruit!", Program.ProbEats());
         }
 
-        //Test RingTailed Hangs Out
+        //Test RingTailed Spends Time
+        [Fact]
+        public void RTSpendsTimeOnGround()
+        {
+            Assert.Equal("on the ground!", Program.RTSpendsTime());
+        }
+
         //Test RingTailed Name
+        [Fact]
+        public void RTNameIsRingTailed()
+        {
+            Assert.Equal("Ring Tailed Lemur", Program.RTName());
+        }
     }
 }
