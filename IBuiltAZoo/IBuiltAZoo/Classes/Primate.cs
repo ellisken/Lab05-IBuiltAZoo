@@ -8,7 +8,17 @@ namespace IBuiltAZoo.Classes
     class Primate : Mammal
     {
         public override string Name { get; set; }
-        public override int Age { get; set; }
+        public override int Age
+        {
+            get
+            {
+                return 5;
+            }
+            set
+            {
+                Age = value;
+            }
+        }
 
         //Virtual property 2/2
         public virtual bool HasTail
