@@ -90,5 +90,8 @@ namespace TestZoo
         {
             Assert.Equal("Unripe fruit!", Program.ProbEats());
         }
+
+        //Test RingTailed Hangs Out
+        //Test RingTailed Name
     }
 }
