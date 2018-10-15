@@ -4,25 +4,25 @@ using System.Text;
 
 namespace IBuiltAZoo.Classes
 {
-    class Panda : Bear
-    {  
+    class PolarBear : Bear
+    {
         public override string Name
         {
             get
             {
-                return "Panda";
+                return "Polar Bear";
             }
         }
 
         //Abstract method override 2/2
         public override bool Hunts()
         {
-            return false;
+            return true;
         }
 
         public override string Eats()
         {
-            return "I eat bamboo!";
+            return "I eat seals!";
         }
     }
 }

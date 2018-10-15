@@ -7,21 +7,29 @@ namespace IBuiltAZoo.Classes
     //Abstract class 2/3
     abstract class Bear : Mammal
     {
-        //Abstract property override 1/1
+        //Abstract property override 1/2
         public override string Name
         {
             get
             {
                 return "Beary McBearface";
             }
+            set
+            {
+                Name = value;
+            }
         }
 
-        //Abstract property override
+        //Abstract property override 2/2
         public override int Age
         {
             get
             {
                 return 0;
+            }
+            set
+            {
+                Age = value;
             }
         }
 
