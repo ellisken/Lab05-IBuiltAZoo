@@ -69,8 +69,26 @@ namespace TestZoo
         {
             Assert.False(Program.DoesChimpHaveTail());
         }
+
         //Test Chimpanzee.Sound()
-        //Test Proboscis.HasTail != Chimpanzee.HasTail
+        [Fact]
+        public void ChimpSoundIsCorrect()
+        {
+            Assert.Equal("Hoo hoo, ha ha", Program.ChimpSound());
+        }
+
+        //Test Proboscis.HasTail
+        [Fact]
+        public void ProbHasTail()
+        {
+            Assert.True(Program.DoesProbHaveTail());
+        }
+
         //Test Proboscis.Eats()
+        [Fact]
+        public void ProbEatsProbFood()
+        {
+            Assert.Equal("Unripe fruit!", Program.ProbEats());
+        }
     }
 }

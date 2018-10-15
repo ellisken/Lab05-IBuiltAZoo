@@ -157,5 +157,23 @@ namespace IBuiltAZoo
             Chimpanzee c = new Chimpanzee();
             return c.HasTail;
         }
+
+        public static string ChimpSound()
+        {
+            Chimpanzee c = new Chimpanzee();
+            return c.Sound();
+        }
+
+        public static bool DoesProbHaveTail()
+        {
+            Proboscis p = new Proboscis();
+            return p.HasTail;
+        }
+
+        public static string ProbEats()
+        {
+            Proboscis p = new Proboscis();
+            return p.Eats();
+        }
     }
 }
