@@ -34,11 +34,41 @@ namespace TestZoo
         {
             Assert.Equal("I eat salmon and berries!", Program.GrizzlyEats());
         }
+
         //Test PolarBear.Hunts == true
+        [Fact]
+        public void PolarBearHunts()
+        {
+            Assert.True(Program.DoesPolarHunt());
+        }
+        
         //Test PolarBear.ClawLength is same as Bear.ClawLength
+        [Fact]
+        public void PolarClawLengthIs3()
+        {
+            Assert.Equal(3, Program.PolarClawLength());
+        }
+
         //Test Lemur.Eats()
+        [Fact]
+        public void LemurEatsLemurFood()
+        {
+            Assert.Equal("Lemur food", Program.LemurEats());
+        }
+
         //Test Lemur.Sound()
+        [Fact]
+        public void LemurMakesLemurSound()
+        {
+            Assert.Equal("Lemur sound!", Program.LemurSound());
+        }
+
         //Test Chimpanzee.HasTail == true
+        [Fact]
+        public void ChimpHasNoTail()
+        {
+            Assert.False(Program.DoesChimpHaveTail());
+        }
         //Test Chimpanzee.Sound()
         //Test Proboscis.HasTail != Chimpanzee.HasTail
         //Test Proboscis.Eats()

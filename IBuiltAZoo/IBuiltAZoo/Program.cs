@@ -127,5 +127,35 @@ namespace IBuiltAZoo
             Grizzly grizzly = new Grizzly();
             return grizzly.Eats();
         }
+
+        public static bool DoesPolarHunt()
+        {
+            PolarBear pb = new PolarBear();
+            return pb.Hunts();
+        }
+
+        public static int PolarClawLength()
+        {
+            PolarBear pb = new PolarBear();
+            return pb.ClawLength;
+        }
+
+        public static string LemurEats()
+        {
+            Lemur l = new Lemur();
+            return l.Eats();
+        }
+
+        public static string LemurSound()
+        {
+            Lemur l = new Lemur();
+            return l.Sound();
+        }
+
+        public static bool DoesChimpHaveTail()
+        {
+            Chimpanzee c = new Chimpanzee();
+            return c.HasTail;
+        }
     }
 }
