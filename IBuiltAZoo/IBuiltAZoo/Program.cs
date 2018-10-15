@@ -11,14 +11,22 @@ namespace IBuiltAZoo
             Console.WriteLine("My zoo has an abstract base class called Mammal.\nMammals" +
                 " have 1) an abstract name and 2) an abstract age, and can 1) eat (abstract) and 2) make a sound (virtual).\n");
 
+            Console.WriteLine("\n\nHit <ENTER> to continue.");
+            Console.ReadLine();
+
             //Show info about Bears and demo different Bear subclasses
             Console.WriteLine("The class 'Bear' inherits from Mammal and overrides all properties and methods. Bear additionally" +
                 " adds a virtual property called ClawLength and an abstract method called Hunts().\n");
             Console.WriteLine("There are three Bear descendent classes: Panda, Grizzly, and PolarBear.");
             Console.WriteLine("Pandas, Grizzlies, and PolarBears override all properties and methods of Bear EXCEPT for: ClawLength, Age, and Sound.");
             Bear[] myBears = CreateBears();
-            Console.WriteLine("Here's a demonstration of each bear type ");
+
+            Console.WriteLine("\n\nHit <ENTER> to see a demonstration of each class that inherits from Bear.");
+            Console.ReadLine();
+            Console.WriteLine("Here's a demonstration of each bear type\n");
             ShowBears(myBears);
+            Console.WriteLine("\n\nHit <ENTER> to continue.");
+            Console.ReadLine();
 
 
             //Instantiate Primates and return collection of primates
@@ -27,7 +35,9 @@ namespace IBuiltAZoo
             Console.WriteLine("There are three Primate descendent classes: Lemur, Chimpanzee, and Proboscis.");
             Console.WriteLine("Lemurs and Proboscii override Name, Eats(), Sound(), while Chimpanzees additionally override HasTail. ");
             Primate[] myPrimates = CreatePrimates();
-            Console.WriteLine("Here's a demonstration of each primate type ");
+            Console.WriteLine("\n\nHit <ENTER> to see a demonstration of each class that inherits from Primate.");
+            Console.ReadLine();
+            Console.WriteLine("Here's a demonstration of each primate type\n");
             ShowPrimates(myPrimates);
         }
 
@@ -44,6 +54,10 @@ namespace IBuiltAZoo
             return bears;
         }
 
+        /// <summary>
+        /// Displays the properties and behaviors of each Bear
+        /// </summary>
+        /// <param name="bears">An array of Bears</param>
         public static void ShowBears(Bear[] bears)
         {
             foreach (Bear bear in bears)
@@ -53,10 +67,15 @@ namespace IBuiltAZoo
                 Console.WriteLine($"Claw length: {bear.ClawLength}");
                 Console.WriteLine($"Eats: {bear.Eats()}");
                 Console.WriteLine($"Sound: {bear.Sound()}");
+                Console.WriteLine($"Hunts? {bear.Hunts()}");
                 Console.WriteLine();
             }
         }
 
+        /// <summary>
+        /// Creates an array of objects that represent each class that inherits from Primate
+        /// </summary>
+        /// <returns>Array of classes that inherit from Primate</returns>
         public static Primate[] CreatePrimates()
         {
             Primate[] primates = new Primate[3];
@@ -66,6 +85,10 @@ namespace IBuiltAZoo
             return primates;
         }
 
+        /// <summary>
+        /// Displays the properties and behaviors of each Primate
+        /// </summary>
+        /// <param name="bears">An array of Primates</param>
         public static void ShowPrimates(Primate[] primates)
         {
             foreach (Primate primate in primates)
