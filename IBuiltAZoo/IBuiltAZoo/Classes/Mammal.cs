@@ -5,7 +5,7 @@ using System.Text;
 namespace IBuiltAZoo.Classes
 {
     //Abstract class 1/3
-    abstract class Mammal
+    public abstract class Mammal
     {  
         //Abstract property 1/2
         public abstract string Name { get; set; }

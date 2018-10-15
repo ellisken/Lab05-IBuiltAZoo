@@ -5,7 +5,7 @@ using System.Text;
 namespace IBuiltAZoo.Classes
 {
     //Abstract class #3
-    class Primate : Mammal
+    public abstract class Primate : Mammal
     {
         public override string Name { get; set; }
         public override int Age

@@ -3,9 +3,9 @@ using IBuiltAZoo.Classes;
 
 namespace IBuiltAZoo
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to my zoo!\n");
             Console.WriteLine("My zoo has an abstract base class called Mammal.\nMammals" +
@@ -101,6 +101,31 @@ namespace IBuiltAZoo
                 Console.WriteLine($"Hangs: {primate.Hangs()}");
                 Console.WriteLine();
             }
+        }
+
+        //Methods to access private methods in classes for testing
+        public static string GetPandaName()
+        {
+            Panda newPanda = new Panda();
+            return newPanda.Name;
+        }
+
+        public static bool DoesPandaHunt()
+        {
+            Panda panda = new Panda();
+            return panda.Hunts();
+        }
+
+        public static bool DoesGrizzlyHunt()
+        {
+            Grizzly grizzly = new Grizzly();
+            return grizzly.Hunts();
+        }
+
+        public static string GrizzlyEats()
+        {
+            Grizzly grizzly = new Grizzly();
+            return grizzly.Eats();
         }
     }
 }

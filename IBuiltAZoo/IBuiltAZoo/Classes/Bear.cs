@@ -5,7 +5,7 @@ using System.Text;
 namespace IBuiltAZoo.Classes
 {
     //Abstract class 2/3
-    abstract class Bear : Mammal
+    public abstract class Bear : Mammal
     {
         //Abstract property override 1/2
         public override string Name
