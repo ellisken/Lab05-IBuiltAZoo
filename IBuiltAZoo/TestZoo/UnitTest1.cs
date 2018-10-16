@@ -104,5 +104,41 @@ namespace TestZoo
         {
             Assert.Equal("Ring Tailed Lemur", Program.RTName());
         }
+
+        //Test Chimp implements ICanSwim
+        [Fact]
+        public void ChimpImplementsICanSwim()
+        {
+            Assert.Equal("Scientists have proven I'm capable of swimming.", Program.ChimpSwims());
+        }
+
+        //Test Chimp implements ICanGroom
+        [Fact]
+        public void ChimpImplementsICanGroom()
+        {
+            Assert.Equal("I'm looking in your fur for bugs.", Program.ChimpGrooms());
+        }
+
+        //Test PolarBear implements ICanSwim
+        [Fact]
+        public void PBImplementsICanSwim()
+        {
+            Assert.Equal("I'm swimming in frigid water", Program.PolarSwims());
+
+        }
+
+        //Prove Chimp IS a Mammal
+        [Fact]
+        public void ChimpIsMammal()
+        {
+            Assert.True(Program.ChimpIsMammal());
+        }
+
+        //Prove PolarBear overrides Eats()
+        [Fact]
+        public void PolarBearOverridesEats()
+        {
+            Assert.NotEqual("I eat salmon and berries!", Program.PolarEats());
+        }
     }
 }

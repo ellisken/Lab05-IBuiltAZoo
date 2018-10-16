@@ -34,22 +34,22 @@ namespace IBuiltAZoo.Classes
             return "Hoo hoo, ha ha";
         }
 
-        string ICanSwim.DryOff()
+        public string DryOff()
         {
             return "I dry off by doing a little dance.";
         }
 
-        string ICanGroom.EatFoundBug()
+        public string EatFoundBug()
         {
             return "Yum! I found a bug in your fur";
         }
 
-        string ICanGroom.Groom()
+        public string Groom()
         {
             return "I'm looking in your fur for bugs.";
         }
 
-        string ICanSwim.Swim()
+        public string Swim()
         {
             return "Scientists have proven I'm capable of swimming.";
         }

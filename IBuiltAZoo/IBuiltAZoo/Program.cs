@@ -1,5 +1,6 @@
 ﻿using System;
 using IBuiltAZoo.Classes;
+using IBuiltAZoo.Interfaces;
 
 namespace IBuiltAZoo
 {
@@ -155,6 +156,12 @@ namespace IBuiltAZoo
             return pb.ClawLength;
         }
 
+        public static string PolarEats()
+        {
+            PolarBear pb = new PolarBear();
+            return pb.Eats();
+        }
+
         public static string LemurEats()
         {
             Lemur l = new Lemur();
@@ -201,6 +208,31 @@ namespace IBuiltAZoo
         {
             RingTailed rt = new RingTailed();
             return rt.Name;
+        }
+
+        public static string ChimpGrooms()
+        {
+            Chimpanzee c = new Chimpanzee();
+            return c.Groom();
+        }
+
+        public static string ChimpSwims()
+        {
+            Chimpanzee c = new Chimpanzee();
+            return c.Swim();
+        }
+
+        public static string PolarSwims()
+        {
+            PolarBear p = new PolarBear();
+            return p.Swim();
+        }
+
+        public static bool ChimpIsMammal()
+        {
+            Chimpanzee c = new Chimpanzee();
+            if (c is Mammal) return true;
+            return false;
         }
     }
 }
