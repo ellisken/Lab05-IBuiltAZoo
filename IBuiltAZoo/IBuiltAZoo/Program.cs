@@ -247,5 +247,11 @@ namespace IBuiltAZoo
             if (c is Mammal) return true;
             return false;
         }
+
+        public static string ProbGrooms()
+        {
+            Proboscis p = new Proboscis();
+            return p.Groom();
+        }
     }
 }

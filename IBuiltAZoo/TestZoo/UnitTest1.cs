@@ -127,6 +127,13 @@ namespace TestZoo
 
         }
 
+        //Test Proboscis implements ICanGroom
+        [Fact]
+        public void ProbImplementsICanGroom()
+        {
+            Assert.Equal("I can also groom.", Program.ProbGrooms());
+        }
+
         //Prove Chimp IS a Mammal
         [Fact]
         public void ChimpIsMammal()
