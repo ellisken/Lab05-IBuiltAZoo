@@ -44,7 +44,7 @@ namespace IBuiltAZoo
             Console.ReadLine();
 
             //Show RingTailed
-            Console.WriteLine("Finally, the class RingTailed inherits from Lemur and adds a method called SpendsTime()");
+            Console.WriteLine("Additionally, the class RingTailed inherits from Lemur and adds a method called SpendsTime()");
             RingTailed ringTailedLemur = new RingTailed();
             Console.WriteLine($"Name: {ringTailedLemur.Name}");
             Console.WriteLine($"Age: {ringTailedLemur.Age}");
@@ -55,6 +55,19 @@ namespace IBuiltAZoo
             Console.WriteLine($"Spends time: {ringTailedLemur.SpendsTime()}");
             Console.WriteLine();
 
+            //Show Interface Implementation
+            Console.WriteLine("Finally, there are two interfaces: ICanSwim and ICanGroom.");
+            Console.WriteLine("Chimpanzee implements both, while PolarBear implements ICanSwim");
+            Console.WriteLine("\n\nHit <ENTER> to see a demonstration.");
+            Console.ReadLine();
+            PolarBear pb = new PolarBear();
+            Chimpanzee c = new Chimpanzee();
+            Console.WriteLine($"calling PolarBear.Swim(): {pb.Swim()}");
+            Console.WriteLine($"calling PolarBear.DryOff(): {pb.DryOff()}");
+            Console.WriteLine($"calling Chimpanzee.Swim(): {c.Swim()}");
+            Console.WriteLine($"calling Chimpanzee.DryOff(): {c.DryOff()}");
+            Console.WriteLine($"calling Chimpanzee.Groom(): {c.Groom()}");
+            Console.WriteLine($"calling Chimpanzee.EatFoundBug: {c.EatFoundBug()}");
         }
 
         /// <summary>
