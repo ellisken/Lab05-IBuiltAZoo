@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using IBuiltAZoo.Interfaces;
 
 namespace IBuiltAZoo.Classes
 {
-    class Proboscis : Primate
+    class Proboscis : Primate, ICanGroom
     {
         public override string Name
         {
@@ -22,6 +23,16 @@ namespace IBuiltAZoo.Classes
         public override string Sound()
         {
             return "Proboscis sound!";
+        }
+
+        public string Groom()
+        {
+            return "I can also groom.";
+        }
+
+        public string EatFoundBug()
+        {
+            return "I like eating bugs that I find in fur.";
         }
     }
 }
