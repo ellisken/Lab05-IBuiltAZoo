@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using IBuiltAZoo.Interfaces;
 
 namespace IBuiltAZoo.Classes
 {
-    class PolarBear : Bear
+    class PolarBear : Bear, ICanSwim
     {
         public override string Name
         {
@@ -23,6 +24,16 @@ namespace IBuiltAZoo.Classes
         public override string Eats()
         {
             return "I eat seals!";
+        }
+
+        public string Swim()
+        {
+            return "I'm swimming in frigid water";
+        }
+
+        public string DryOff()
+        {
+            return "I shake myself to dry off.";
         }
     }
 }
