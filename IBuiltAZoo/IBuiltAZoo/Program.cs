@@ -57,17 +57,20 @@ namespace IBuiltAZoo
 
             //Show Interface Implementation
             Console.WriteLine("Finally, there are two interfaces: ICanSwim and ICanGroom.");
-            Console.WriteLine("Chimpanzee implements both, while PolarBear implements ICanSwim");
+            Console.WriteLine("Chimpanzee implements both, while PolarBear implements ICanSwim and Proboscis implements ICanGroom.");
             Console.WriteLine("\n\nHit <ENTER> to see a demonstration.");
             Console.ReadLine();
             PolarBear pb = new PolarBear();
             Chimpanzee c = new Chimpanzee();
+            Proboscis p = new Proboscis();
             Console.WriteLine($"calling PolarBear.Swim(): {pb.Swim()}");
             Console.WriteLine($"calling PolarBear.DryOff(): {pb.DryOff()}");
             Console.WriteLine($"calling Chimpanzee.Swim(): {c.Swim()}");
             Console.WriteLine($"calling Chimpanzee.DryOff(): {c.DryOff()}");
+            Console.WriteLine($"calling Proboscis.Groom(): {p.Groom()}");
+            Console.WriteLine($"calling Proboscis.EatFoundBug(): {p.EatFoundBug()}");
             Console.WriteLine($"calling Chimpanzee.Groom(): {c.Groom()}");
-            Console.WriteLine($"calling Chimpanzee.EatFoundBug: {c.EatFoundBug()}");
+            Console.WriteLine($"calling Chimpanzee.EatFoundBug(): {c.EatFoundBug()}");
         }
 
         /// <summary>
